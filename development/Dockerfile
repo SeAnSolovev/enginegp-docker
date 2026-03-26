@@ -21,6 +21,7 @@ RUN apt-get update && apt-get install -y \
 RUN docker-php-ext-configure gd --with-jpeg --with-webp \
     && docker-php-ext-install \
         pdo_mysql \
+        mysqli \
         xml \
         mbstring \
         gd \
